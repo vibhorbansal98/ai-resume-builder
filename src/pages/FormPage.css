@@ -1,0 +1,322 @@
+.form-page {
+  padding-top: 100px;
+  min-height: 100vh;
+  background: var(--gradient-hero);
+  position: relative;
+}
+
+.form-page::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: var(--gradient-glow);
+  filter: blur(100px);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  position: relative;
+  z-index: 1;
+}
+
+.form-header h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--space-sm);
+}
+
+.form-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Progress Bar */
+.progress-bar-container {
+  max-width: 700px;
+  margin: 0 auto var(--space-2xl);
+  position: relative;
+  z-index: 1;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.progress-steps::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-line {
+  position: absolute;
+  top: 18px;
+  left: 5%;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width var(--transition-slow);
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.progress-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--primary-800);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: all var(--transition-base);
+  color: var(--text-muted);
+}
+
+.progress-step.active .progress-dot {
+  background: var(--gradient-primary);
+  border-color: var(--primary-400);
+  color: white;
+  box-shadow: var(--shadow-glow);
+}
+
+.progress-step.completed .progress-dot {
+  background: var(--accent-500);
+  border-color: var(--accent-400);
+  color: white;
+}
+
+.progress-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 80px;
+  transition: color var(--transition-fast);
+}
+
+.progress-step.active .progress-label {
+  color: var(--primary-300);
+}
+
+.progress-step.completed .progress-label {
+  color: var(--accent-400);
+}
+
+/* Form Card */
+.form-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  background: var(--surface-card);
+  border: 1px solid var(--surface-glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.form-step {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.form-step-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.form-step-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-xl);
+}
+
+/* Repeatable Items */
+.repeatable-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  position: relative;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.repeatable-item:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.remove-item-btn {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.remove-item-btn:hover {
+  background: rgba(239, 68, 68, 0.3);
+}
+
+.add-item-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.6rem 1.25rem;
+  background: rgba(59, 66, 212, 0.1);
+  border: 1px dashed rgba(91, 99, 232, 0.3);
+  border-radius: var(--radius-md);
+  color: var(--primary-300);
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition-base);
+  margin-top: var(--space-sm);
+}
+
+.add-item-btn:hover {
+  background: rgba(59, 66, 212, 0.2);
+  border-color: rgba(91, 99, 232, 0.5);
+}
+
+/* Skills Tags */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.4rem 0.85rem;
+  background: rgba(59, 66, 212, 0.15);
+  border: 1px solid rgba(91, 99, 232, 0.25);
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  color: var(--primary-200);
+  animation: fadeIn 0.2s ease-out;
+}
+
+.skill-tag button {
+  background: none;
+  color: var(--primary-300);
+  font-size: 1rem;
+  line-height: 1;
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.skill-tag button:hover {
+  opacity: 1;
+}
+
+.skill-input-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.skill-input-row .form-input {
+  flex: 1;
+}
+
+.skill-category {
+  margin-bottom: var(--space-lg);
+}
+
+.skill-category-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-400);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
+}
+
+/* Form Grid */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+/* Navigation Buttons */
+.form-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--surface-glass-border);
+}
+
+.form-page-footer {
+  max-width: 700px;
+  margin: var(--space-xl) auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: var(--space-2xl);
+}
+
+.form-page-footer p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .form-card {
+    margin: 0 var(--space-sm);
+    padding: var(--space-lg);
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-label {
+    display: none;
+  }
+
+  .progress-dot {
+    width: 30px;
+    height: 30px;
+    font-size: 0.7rem;
+  }
+}

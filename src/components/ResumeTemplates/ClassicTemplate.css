@@ -1,0 +1,132 @@
+.classic-template {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #1a1a1a;
+  background: white;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.classic-header {
+  text-align: center;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.classic-name {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.classic-contact {
+  font-size: 12px;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.classic-contact span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.classic-section {
+  margin-bottom: 20px;
+}
+
+.classic-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+}
+
+.classic-summary {
+  font-size: 13px;
+  color: #333;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.classic-item {
+  margin-bottom: 14px;
+}
+
+.classic-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.classic-item-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.classic-item-subtitle {
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+}
+
+.classic-item-date {
+  font-size: 12px;
+  color: #777;
+}
+
+.classic-item-desc {
+  font-size: 12.5px;
+  color: #444;
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+.classic-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.classic-skill {
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #333;
+}
+
+.classic-cert-item,
+.classic-achievement-item {
+  margin-bottom: 8px;
+}
+
+.classic-cert-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.classic-cert-issuer {
+  font-size: 12px;
+  color: #666;
+}
+
+@media print {
+  .classic-template {
+    padding: 20px;
+  }
+}

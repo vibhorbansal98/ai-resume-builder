@@ -1,0 +1,159 @@
+.minimal-template {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #374151;
+  background: white;
+  padding: 48px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.minimal-header {
+  margin-bottom: 32px;
+}
+
+.minimal-name {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.minimal-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.minimal-contact a,
+.minimal-contact span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+}
+
+.minimal-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 24px 0;
+}
+
+.minimal-section {
+  margin-bottom: 28px;
+}
+
+.minimal-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.minimal-summary {
+  font-size: 13.5px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+.minimal-item {
+  margin-bottom: 18px;
+}
+
+.minimal-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.minimal-item-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.minimal-item-date {
+  font-size: 11px;
+  color: #9ca3af;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.minimal-item-subtitle {
+  font-size: 12.5px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.minimal-item-desc {
+  font-size: 12.5px;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+.minimal-item-tech {
+  font-size: 11px;
+  color: #9ca3af;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  margin-top: 4px;
+}
+
+.minimal-skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.minimal-skill {
+  font-size: 11.5px;
+  padding: 4px 12px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.minimal-cert-item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.minimal-cert-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.minimal-cert-detail {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.minimal-ach-item {
+  margin-bottom: 10px;
+}
+
+.minimal-ach-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.minimal-ach-desc {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+@media print {
+  .minimal-template {
+    padding: 24px;
+  }
+}
