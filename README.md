@@ -2,7 +2,7 @@
 
 A modern, AI-powered web app that lets you build a professional resume and personal portfolio website just by filling out a simple form. Built entirely using **prompt engineering** with **Antigravity (Google DeepMind's AI coding assistant)** and **Claude**.
 
-> **Live Demo:** Run it locally with `npm run dev` and open [http://localhost:5173](http://localhost:5173)
+> **Live Demo:** [https://vibhor-ai-resume-builder-fyq8i6xny-vibhorbansal98s-projects.vercel.app/](https://vibhor-ai-resume-builder-fyq8i6xny-vibhorbansal98s-projects.vercel.app/)
 
 ---
 
@@ -148,7 +148,7 @@ src/
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/ai-resume-builder.git
+git clone https://github.com/vibhorbansal98/ai-resume-builder.git
 cd ai-resume-builder
 
 # Install dependencies
@@ -158,7 +158,56 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser and start building your resume!
+Open [http://localhost:5173](http://localhost:5173) in your browser, or visit the [live demo](https://vibhor-ai-resume-builder-fyq8i6xny-vibhorbansal98s-projects.vercel.app/) to start building your resume!
+
+---
+
+## 🌐 Deploying to Vercel
+
+This app is deployed on [Vercel](https://vercel.com/) — the easiest way to host a Vite + React project. Here's how:
+
+### Option 1: Via Vercel Dashboard (Recommended)
+
+1. **Push your code to GitHub**
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. **Import the repo on Vercel**
+   - Go to [vercel.com/new](https://vercel.com/new) and sign in with your GitHub account
+   - Click **"Import"** next to your `ai-resume-builder` repository
+
+3. **Configure the project**
+   - **Framework Preset:** Vite (auto-detected)
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+   - Leave everything else as default
+
+4. **Click "Deploy"** — Vercel will build and deploy your app in under a minute. You'll get a live URL like:
+   ```
+   https://your-project-name.vercel.app
+   ```
+
+### Option 2: Via Vercel CLI
+
+```bash
+# Install the Vercel CLI globally
+npm install -g vercel
+
+# Deploy from your project directory
+vercel
+
+# For production deployment
+vercel --prod
+```
+
+The CLI will walk you through linking your project and choosing settings on the first run.
+
+### Auto-Deployments
+
+Once connected, every push to `main` will trigger an automatic production deployment. Pull requests get their own **preview deployments** with unique URLs — great for testing changes before they go live.
 
 ---
 
