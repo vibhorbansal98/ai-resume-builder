@@ -54,25 +54,74 @@ export default function LandingPage() {
           </div>
 
           <div className="hero-visual">
-            <div className="hero-mockup">
-              <div className="mockup-header">
-                <span className="mockup-dot" />
-                <span className="mockup-dot" />
-                <span className="mockup-dot" />
+            <div className="resume-anim">
+              {/* Floating decorative elements */}
+              <div className="resume-sparkle resume-sparkle-1">✦</div>
+              <div className="resume-sparkle resume-sparkle-2">✦</div>
+              <div className="resume-sparkle resume-sparkle-3">✦</div>
+
+              {/* The resume page */}
+              <div className="resume-page">
+                {/* Header with avatar */}
+                <div className="resume-page-header">
+                  <div className="resume-avatar">
+                    <span>JD</span>
+                  </div>
+                  <div className="resume-name-block">
+                    <div className="resume-name">John Doe</div>
+                    <div className="resume-role">Full Stack Developer</div>
+                    <div className="resume-contact-row">
+                      <span className="resume-contact-chip">📧 john@email.com</span>
+                      <span className="resume-contact-chip">🔗 linkedin.com/in/john</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Summary */}
+                <div className="resume-section resume-section-delay-1">
+                  <div className="resume-section-title">Summary</div>
+                  <div className="resume-text-line" style={{ width: '100%' }} />
+                  <div className="resume-text-line" style={{ width: '85%' }} />
+                </div>
+
+                {/* Experience */}
+                <div className="resume-section resume-section-delay-2">
+                  <div className="resume-section-title">Experience</div>
+                  <div className="resume-exp-entry">
+                    <div className="resume-exp-role">Senior Developer — TechCorp</div>
+                    <div className="resume-exp-date">2022 – Present</div>
+                    <div className="resume-text-line" style={{ width: '90%' }} />
+                    <div className="resume-text-line" style={{ width: '70%' }} />
+                  </div>
+                </div>
+
+                {/* Skills */}
+                <div className="resume-section resume-section-delay-3">
+                  <div className="resume-section-title">Skills</div>
+                  <div className="resume-skills-row">
+                    <span className="resume-skill-tag">React</span>
+                    <span className="resume-skill-tag">Node.js</span>
+                    <span className="resume-skill-tag">Python</span>
+                    <span className="resume-skill-tag">AWS</span>
+                    <span className="resume-skill-tag">TypeScript</span>
+                  </div>
+                  <div className="resume-skill-bars">
+                    <div className="resume-skill-bar">
+                      <div className="resume-skill-bar-fill" style={{ width: '92%' }} />
+                    </div>
+                    <div className="resume-skill-bar">
+                      <div className="resume-skill-bar-fill" style={{ width: '85%' }} />
+                    </div>
+                    <div className="resume-skill-bar">
+                      <div className="resume-skill-bar-fill" style={{ width: '78%' }} />
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="mockup-body">
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-                <div className="mockup-line" />
-              </div>
+
+              {/* Second stacked page behind */}
+              <div className="resume-page-bg resume-page-bg-1" />
+              <div className="resume-page-bg resume-page-bg-2" />
             </div>
           </div>
         </div>

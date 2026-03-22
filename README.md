@@ -2,7 +2,7 @@
 
 A modern, AI-powered web app that lets you build a professional resume and personal portfolio website just by filling out a simple form. Built entirely using **prompt engineering** with **Antigravity (Google DeepMind's AI coding assistant)** and **Claude**.
 
-> **Live Demo:** [https://vibhor-ai-resume-builder-fyq8i6xny-vibhorbansal98s-projects.vercel.app/](https://vibhor-ai-resume-builder-fyq8i6xny-vibhorbansal98s-projects.vercel.app/)
+> **Live Demo:** [https://ai-resume-builder-vibhor.vercel.app/](https://ai-resume-builder-vibhor.vercel.app/)
 
 ---
 
@@ -158,7 +158,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser, or visit the [live demo](https://vibhor-ai-resume-builder-fyq8i6xny-vibhorbansal98s-projects.vercel.app/) to start building your resume!
+Open [http://localhost:5173](http://localhost:5173) in your browser, or visit the [live demo](https://ai-resume-builder-vibhor.vercel.app/) to start building your resume!
 
 ---
 
